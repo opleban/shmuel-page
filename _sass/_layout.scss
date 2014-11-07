@@ -178,7 +178,7 @@
 
  .splash-container{
     height:100%;
-    background-color:#000;
+    background-color:#FAEBD7;
     position: relative;
  }
 
@@ -190,4 +190,5 @@
     transform: translate(-50%, -50%);
     width: 90%;
     height: auto;
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.7);
  }
