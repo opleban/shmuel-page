@@ -169,68 +169,25 @@
     font-size: 20px;
 }
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
 /**
- * Posts
+ * Splash page content
  */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+ .splash-content{
+ }
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
+ .splash-container{
+    height:100%;
+    background-color:#000;
+    position: relative;
+ }
 
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}
+ .splash-photo{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+ }
