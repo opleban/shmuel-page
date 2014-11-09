@@ -10,7 +10,6 @@ var ComicViewer = (function(){
         var thumbnail = thumbnails[i-1];
         var image = new Image();
         image.src = IMG_BASE_PATH + i + '.jpg';
-        console.log(image);
         (function(i){
           thumbnail.addEventListener('click', function(e){
             e.preventDefault();
