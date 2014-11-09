@@ -192,3 +192,62 @@
     height: auto;
     box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.7);
  }
+
+/**
+ * Comic Thumbnail Sidebar
+ */
+
+ .thumbnail-sidebar{
+    float: left;
+    width: 200px;
+    height: 1000px;
+    overflow: scroll;
+    padding: 10px;
+ }
+
+ .thumbnail{
+    height: 200px;
+    width: 120px;
+    padding: 5px;
+ }
+
+ .selected{
+    background-color:lightgrey;
+ }
+
+ .thumbnail:hover{
+    background-color:grey;
+ }
+
+ .thumbnail-sidebar img{
+ }
+
+ .thumbnail-caption{
+    text-align: center;
+ }
+
+ /**
+ * Comic Full Page View
+ */
+
+ .main-page-content{
+    float: left;
+    margin-left: 20px;
+ }
+
+ #full-page{
+    border: 1px solid black;
+    height: 1067px;
+    width: 800px;
+ }
+ .page-header{
+    height: 60px;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+
+ .clearfix{
+    clear: both;
+ }
+
