@@ -8,10 +8,10 @@ thumbnail_base_path: /assets/images/EscapeComics/thumbnails/ESCAPE_color_
 <div class='thumbnail-sidebar'>
   <ul>
   {% for i in (1..page.comic_pages) %}
-    <li class='thumbnail'>
-      <img class='thumbnail-image' id='page-{{i}}' src='{{site.baseurl}}{{page.thumbnail_base_path}}{{i}}.jpg'></img>
+    <a href="#"><li class='thumbnail' id='thumbnail-{{i}}'>
+      <img class='thumbnail-image' src='{{site.baseurl}}{{page.thumbnail_base_path}}{{i}}.jpg'></img>
       <div class='thumbnail-caption'>Page {{i}}</div>
-    </li>
+    </li></a>
   {% endfor %}
   </ul>
 </div>
