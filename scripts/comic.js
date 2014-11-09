@@ -6,15 +6,15 @@ var ComicViewer = (function(){
       currentImage.className += ' selected';
       var fullPageImage = document.getElementById('full-page');
       var thumbnails = document.getElementsByClassName('thumbnail');
-      for (var i=0; i<thumbnails.length; i++){
-        var thumbnail = thumbnails[i];
+      for (var i=1; i<=thumbnails.length; i++){
+        var thumbnail = thumbnails[i-1];
         var image = new Image();
         image.src = IMG_BASE_PATH + i + '.jpg';
         console.log(image);
         (function(i){
           thumbnail.addEventListener('click', function(e){
             e.preventDefault();
-            var pageNumber = i+1;
+            var pageNumber = i;
             fullPageImage.setAttribute('src', IMG_BASE_PATH + pageNumber + '.jpg');
             currentImage.className = 'thumbnail';
             this.className += ' selected';
