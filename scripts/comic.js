@@ -8,6 +8,8 @@ var ComicViewer = (function(){
       var thumbnails = document.getElementsByClassName('thumbnail');
       for (var i=0; i<thumbnails.length; i++){
         var thumbnail = thumbnails[i];
+        var prefetchRequest = new XMLHttpRequest();
+        prefetchRequest.open('GET', IMG_BASE_PATH + i + '.jpg');
         (function(i){
           thumbnail.addEventListener('click', function(e){
             e.preventDefault();
