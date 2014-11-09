@@ -8,6 +8,7 @@ var ComicViewer = (function(){
       var thumbnails = document.getElementsByClassName('thumbnail');
       for (var i=1; i<=thumbnails.length; i++){
         var thumbnail = thumbnails[i-1];
+        //prefetches images upon init
         var image = new Image();
         image.src = IMG_BASE_PATH + i + '.jpg';
         (function(i){
@@ -26,5 +27,6 @@ var ComicViewer = (function(){
 }());
 
 document.addEventListener('DOMContentLoaded', function(){
-  ComicViewer.init();
+  if (document.getElementById('comics-page'))
+    ComicViewer.init();
 });
